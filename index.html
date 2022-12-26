@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <!-- Page icon Link -->
+    <link rel="icon" href="images/icon.png" />
+    <!-- Font Family Link -->
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+    <!-- FontAwesome Link -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>    
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style link -->
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+<body>
+
+
+<section class="  display-temp" id="search">
+<div class="bg-color py-5">
+<div class="container">
+    <div class="search m-auto d-flex">
+        <input class="w-100 mb-5" type="text" id="search-bar" placeholder="&#xF002; Search City..." style="font-family:Arial, FontAwesome">
+    </div>
+
+    <!-- today -->
+    <div class="city-temp d-flex">
+        <div class="temp-card shadow">
+            <div class="day-and-date d-flex justify-content-between  rounded-top">
+                <p id="today"></p>
+                <p id="today-date"></p>
+            </div>
+            <div class="m-3 temp-details">
+                <p id="location"></p>
+            <div class="d-flex justify-content-between">
+                <div class="pt-3">
+                    <h2 id="today-degree" class="d-inline-block"></h2><h2 class="d-inline-block"><sup>o</sup>C</h2>
+                </div>
+                <img id="today-icon" width="90" alt="">
+            </div>
+            <p id="today-description"></p>
+            <div class="details">
+                <i class="fas fa-umbrella pr-1"></i>
+                <span id="percent"></span> <span>%</span>
+                <i class="fas fa-wind pl-3 pr-1"></i>
+                <span id="wind"></span> <span>km/h</span>
+                <i class="far fa-compass pl-3 pr-1"></i>
+                <span id="compass"></span>
+            </div>
+            </div>
+            
+
+        </div>
+    <!-- tomorrow -->
+    <div class="temp-card text-center shadow ">
+        <div class="day-and-date">
+            <p class="nextDay"></p>
+        </div>
+
+        <div class="temp-details">
+            <div>
+            <img class="nextDay-icon m-2" width="90"/>
+            </div>
+            <h2 class="max-degree d-inline-block"></h2><h2 class="d-inline-block"><sup>o</sup>C</h2>
+            <br>
+            <p class="min-degree d-inline-block"></p><p class="d-inline-block"><sup>o</sup>C</p>
+            <p class="nextDay-description"></p>
+        </div>
+        </div>
+        
+        <!-- next tomorrow -->
+        <div class="temp-card text-center shadow last-card">
+        <div class="day-and-date">
+            <p class="nextDay"></p>
+        </div>
+
+        <div class="temp-details">
+            <div>
+            <img class="nextDay-icon m-2" width="90"/>
+            </div>
+            <h2 class="max-degree d-inline-block"></h2><h2 class="d-inline-block"><sup>o</sup>C</h2>
+            <br>
+            <p class="min-degree d-inline-block"></p><p class="d-inline-block"><sup>o</sup>C</p>
+            <p class="nextDay-description"></p>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+<!--start footer -->
+<footer class="fixed-bottom footer">
+<div class="container">
+    <p class="text-center  mb-0">Copyright &copy; 2021 Designed by Mostafa. All rights reserved</p>
+    <div class="social-media text-center mt-2">
+        <i class="text-info fab fa-facebook-f"></i>
+        <i class="text-info fab fa-twitter"></i>
+        <i class="text-danger fab fa-pinterest"></i>
+        <i class="text-danger fab fa-google-plus"></i>
+    </div>
+</div>
+</footer>
+
+    <script src="js/jquery-3.5.1.slim.min.js" ></script>
+    <script src="js/bootstrap.min.js" ></script>
+    <script src="js/popper.min.js" ></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
